@@ -1,0 +1,13 @@
+The required dependencies are:
+Environment and IDE:
+1. Python environment.
+2. Python IDE. It will be better if you install "Spyder".
+
+Python modules or packages:
+1. Numpy
+2. Tensorflow
+4. Keras
+3. Pathlib
+4. OS
+5. Scikit Learn
+6. OpenCV Python
