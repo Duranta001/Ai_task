@@ -91,22 +91,3 @@ except OSError:
     print(".h5 model not found or entered a wrong path")
 except Exception as e:
     print(str(e))
-
-# Creating a test file which contain output information
-output_file = 'output.txt'
-with open(output_file, 'w') as f:
-    f.write("Model's architecture summary: \n")
-    sys.stdout = f
-    model.summary()
-    sys.stdout = sys.__stdout__
-    f.write(" \n")
-    f.write('=================================================================================\n')
-    f.write('Evaluation metric(s) based on test data \n')
-    f.write(matrics)
-    f.write(" \n")
-    f.write('=================================================================================\n')
-    f.write('Evaluation of all the data from the given folder serially:')
-    for i in Predicted_output:
-        f.write(' \n')
-        f.write(i)
-   
